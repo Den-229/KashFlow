@@ -1,0 +1,1 @@
+import 'package:http/http.dart' as http; class ApiClient { static const String baseUrl = 'http://10.0.2.2:8000/api/v1'; Future<bool> checkHealth() async { try { final res = await http.get(Uri.parse(baseUrl + '/health')); return res.statusCode == 200; } catch (e) { return false; } } }

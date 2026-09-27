@@ -1,0 +1,1 @@
+import React from 'react'; import Navbar from './components/Navbar'; import Header from './components/Header'; export default function App() { return (<div className='app-container'><Navbar /><main className='content-area'><Header pageTitle='KashFlow Portal' /><div className='card'><h2>KashFlow Dashboard</h2><p>Finance Personnelle Intelligente & Budgets</p></div></main></div>); }
